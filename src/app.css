@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+	--header-title-font: 'Roboto', sans-serif;
+	--primary-text-color: hsl(0, 90%, 21%);
+	--secondary-text-color: hsl(0, 100%, 33%);
+	--tertiary-text-color: hsl(0, 0%, 30%);
+
+	--accent-text-color-red: hsl(0, 100%, 33%);
+	--accent-background-color-red: hsl(0, 0%, 80%);
+	--link-text-color: var(--accent-text-color);
+
+	--accent-text-color: var(--accent-text-color-red);
+	--accent-background-color: var(--accent-background-color-red);
+
+	--primary-button-text-color: hsl(349, 84%, 99%);
+	--primary-button-background-color: var(--secondary-text-color);
+	--primary-button-background-image: linear-gradient(
+		var(--secondary-text-color),
+		var(--primary-text-color)
+	);
+
+	--support-button-background-color: hsl(0, 100%, 33%);
+	--support-button-background-image: linear-gradient(hsl(0, 99%, 43%), hsl(0, 100%, 33%));
+
+	--body-background-color: hsl(0, 0%, 90%);
+	--body-background-color-light: hsl(0, 0%, 97%);
+
+	--item-card-background-color: hsl(0, 0%, 100%);
+	--item-card-background-color-hover: var(--accent-background-color);
+	--item-card-text-color-hover: hsl(0, 0%, 5%);
+
+	--nav-background-color-primary: hsl(0, 0%, 0%);
+	--nav-background-color-secondary: hsl(0, 0%, 26%);
+	--nav-text-color: hsl(0, 0%, 96%);
+
+	--episode-title-text-color: hsl(0, 90%, 21%);
+	--episode-pubdate-text-color: hsl(0, 90%, 21%);
+
+	--chapter-selected-background-color: hsl(0, 0%, 93%);
+	--chapter-selected-text-color: var(--accent-text-color);
+	--chapter-border-color: hsl(0, 0%, 78%);
+
+	--transcript-active-text-color: var(--accent-text-color);
+
+	--episode-notes-header-active-text-color: var(--accent-text-color);
+	--episode-notes-header-text-color: hsl(0, 0%, 33%);
+
+	--nav-background-color: hsl(220, 29%, 28%);
+	--nav-title-color: hsl(0, 0%, 90%);
+
+	--app-card-background-color: hsl(0, 0%, 100%);
+	--app-card-text-color: var(--primary-text-color);
+}
+
+html,
+body,
+#svelte {
+	height: 100vh;
+	width: 100%;
+	margin: 0;
+}
+
+#svelte {
+	background: var(--body-background-color);
+	background: radial-gradient(
+		circle,
+		var(--body-background-color-light) 0%,
+		var(--body-background-color) 100%
+	);
+}
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: hsl(0, 88%, 13%);
+	border-radius: 10px;
+}
