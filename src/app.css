@@ -29,8 +29,8 @@
 	--item-card-background-color-hover: var(--accent-background-color);
 	--item-card-text-color-hover: hsl(0, 0%, 5%);
 
-	--nav-background-color-primary: hsl(0, 0%, 0%);
-	--nav-background-color-secondary: hsl(0, 0%, 26%);
+	--nav-background-color-primary: hsl(0, 99%, 26%);
+	--nav-background-color-secondary: hsl(0, 99%, 26%);
 	--nav-text-color: hsl(0, 0%, 96%);
 
 	--episode-title-text-color: hsl(0, 90%, 21%);

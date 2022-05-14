@@ -24,7 +24,7 @@
 
 			const feed = f.rss.channel;
 			const feedTitle = feed.title;
-			const feedImage = feed?.image?.url || feed?.['@_itunes:image']?.['@_href'];
+			const feedImage = feed?.image?.['@_url'] || feed?.['itunes:image']?.['@_href'];
 			const feedItems = [].concat(feed.item).map((v) => {
 				v.slug = v.title
 					.toLowerCase()
@@ -46,6 +46,9 @@
 	$feedImage = props.feedImage;
 	$feedItems = props.feedItems;
 	$feedUrl = props.feedUrl;
+
+	console.log($feed);
+	console.log($feedImage);
 
 	import Nav from '$lib/Viewers/Desktop/Header/Nav.svelte';
 

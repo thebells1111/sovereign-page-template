@@ -9,6 +9,8 @@
 			window.open(link, '_blank', 'menubar=no, status=no,top=200,left=0,width=800,height=800');
 		}
 	}
+
+	$: console.log($feedImage);
 </script>
 
 <div class="container">
